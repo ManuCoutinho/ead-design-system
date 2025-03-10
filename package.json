@@ -1,0 +1,29 @@
+{
+  "name": "ead-design-core",
+  "version": "0.1.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node-dev -r tsconfig-paths/register --transpile-only --respawn --ignore-watch node_modules src/index.ts",
+    "build": "tsc",
+    "test": "jest",
+    "test:watch": "jest --watchAll"
+  },
+  "author": "Manu Coutinho",
+  "license": "MIT",
+  "description": "",
+  "devDependencies": {
+    "@faker-js/faker": "^9.5.0",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.13.1",
+    "@types/uuid": "^10.0.0",
+    "gerador-validador-cpf": "^5.0.2",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.5",
+    "ts-node-dev": "^2.0.0",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "uuid": "^11.1.0"
+  }
+}
