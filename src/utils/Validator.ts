@@ -28,9 +28,5 @@ export default class Validator {
     return regex.test(value) ? null : ErrorValidation.new(error, value)
   }
 
-  static isEmailValid(email: string): boolean {
-    const regex = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i
-    //[^<>()[\]\.,;:\s@\"] -> valida segmento antes do @
-    return regex.test(email)
-  }
+
 }

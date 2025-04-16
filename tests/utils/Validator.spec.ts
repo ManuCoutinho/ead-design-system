@@ -65,15 +65,6 @@ describe('Validator class', () => {
     expect(error?.code).toBe(msgError)
   });
 
-  it('should validate a invalid email and return false', () => {
-    const error = Validator.isEmailValid('1234455A6')
-    expect(error).toBeFalsy()
-  });
-
-  it('should validate a valid email and return true', () => {
-    const error = Validator.isEmailValid('email@email.com')
-    expect(error).toBeTruthy()
-  });
 
   it('should return a list of errors', () => {
     const errors = Validator.join(Validator.notNull(null, 'error 1'),
